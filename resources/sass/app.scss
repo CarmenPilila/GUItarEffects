@@ -1,0 +1,67 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+	background: #D6D5D5;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+
+	color: #252525;
+	text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-weight: bold;
+}
+
+.btn-effect {
+	color: #252525;
+	border: 2px solid #252525;
+	background: #909090;
+	border-radius: 2px;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-weight: bold;
+	width: 90%;
+	&.active {
+		color: #cb1f42;
+		border-color: #cb1f42;
+		background: #d2c4c7;
+	}
+}
+
+.container {
+	max-width: 1000px;
+}
+
+
+@include media-breakpoint-down(md) {
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.bg-gray-100 {
+    background: #D6D5D5;
+}
+.bg-gray-200 {
+    background: #C1C0C0;
+}
+.bg-gray-300 {
+    background: #909090;
+}
+.bg-gray-400 {
+    background: #252525;
+}
+
+.gray-100 {
+    color: #D6D5D5;
+}
+.gray-200 {
+    color: #C1C0C0;
+}
+.gray-300 {
+    color: #909090;
+}
+.gray-400 {
+    color: #252525;
+}
